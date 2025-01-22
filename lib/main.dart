@@ -147,12 +147,12 @@ class _MyHomePageState extends State<MyHomePage>
               ? TextField(
                   autofocus: true,
                   decoration: InputDecoration(
-                      hintText: 'Rechercher par le nom...',
+                      hintText: 'Rechercher par le titre...',
                       hintStyle: const TextStyle(
                           color: Color.fromARGB(137, 22, 21, 21),
                           fontStyle: FontStyle.italic),
                       border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(100),
+                        borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide.none,
                       ),
                       filled: true,
@@ -177,7 +177,7 @@ class _MyHomePageState extends State<MyHomePage>
                       color: Colors.blue),
                 ),
           centerTitle: true,
-          toolbarHeight: 70,
+          toolbarHeight: 80,
           bottom: isSearching
               ? null
               : TabBar(
