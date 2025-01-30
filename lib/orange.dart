@@ -153,7 +153,7 @@ class _OrangeState extends State<Orange> {
                       ),
                       trailing: ElevatedButton(
                         onPressed: () {
-                          makePhoneCall(code['code']!);
+                          makePhoneCall(context, code['code']!);
                         },
                         child: const Text('Lancer',
                             style: TextStyle(

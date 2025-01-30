@@ -86,18 +86,12 @@ class _MyHomePageState extends State<MyHomePage>
     Tab(
       icon: ClipRRect(
         borderRadius: BorderRadius.circular(50),
-        child: Container(
-          height: 40,
-          width: 40,
-          color: const Color.fromARGB(255, 216, 228, 216),
-          child: const Icon(
-            Icons.person,
-            color: Colors.blue,
-            size: 24,
-          ),
+        child: const Icon(
+          Icons.person_4_rounded,
+          size: 40,
         ),
       ),
-      text: 'Options',
+      text: 'Options', // Texte associé au Tab
     ),
   ];
 

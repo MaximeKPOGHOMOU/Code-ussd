@@ -1,3 +1,4 @@
+import 'package:code_ussd/config.dart';
 import 'package:code_ussd/self.dart';
 import 'package:flutter/material.dart';
 
@@ -9,41 +10,6 @@ class Option extends StatefulWidget {
 }
 
 class _OptionState extends State<Option> {
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   WidgetsBinding.instance.addPostFrameCallback((_) {
-  //     FocusScope.of(context).unfocus();
-  //   });
-  // }
-  void _showAboutDialog() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: const Text(
-            'A PROPOS',
-            style: TextStyle(color: Colors.blue),
-          ),
-          content: const Text(
-            'Cette application a été développée par Maxime KPOGHOMOU. Elle vise à offrir une expérience utilisateur fluide et intuitive pour la gestion des code ussd des réseaux téléphonique da la guinée conakry telque Orange, MTN, Cellcom ...',
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(); // Ferme la boîte de dialogue
-              },
-              child: const Text(
-                'Fermer',
-                style: TextStyle(color: Colors.blue),
-              ),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,12 +20,11 @@ class _OptionState extends State<Option> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               InkWell(
-                onTap:
-                    _showAboutDialog, // Appelle la fonction pour afficher la boîte de dialogue
+                onTap: () {
+                  DialogHelper.showAboutDialog(context);
+                },
                 child: Container(
-                  padding: const EdgeInsets.symmetric(
-                      vertical:
-                          16.0), // Ajoute du padding pour agrandir la zone cliquable
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -82,10 +47,10 @@ class _OptionState extends State<Option> {
               ),
               InkWell(
                 onTap: () {
-                  // Logique pour "Partager l'application"
+                  DialogHelper.shared();
                 },
                 child: Container(
-                  padding: const EdgeInsets.symmetric(vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -111,7 +76,7 @@ class _OptionState extends State<Option> {
                   // Logique pour "Noter l'application"
                 },
                 child: Container(
-                  padding: const EdgeInsets.symmetric(vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -135,10 +100,10 @@ class _OptionState extends State<Option> {
               InkWell(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>const MySelf()));
+                      MaterialPageRoute(builder: (context) => const MySelf()));
                 },
                 child: Container(
-                  padding: const EdgeInsets.symmetric(vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

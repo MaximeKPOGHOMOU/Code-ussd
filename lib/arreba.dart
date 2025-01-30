@@ -101,7 +101,7 @@ class _ArrebaState extends State<Arreba> {
                       ),
                       trailing: ElevatedButton(
                         onPressed: () {
-                          makePhoneCall(code['code']!);
+                          makePhoneCall(context, code['code']!);
                         },
                         child: const Text('Lancer',
                             style: TextStyle(
