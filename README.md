@@ -54,7 +54,7 @@ Ce projet a été réalisé dans le but :
 
 Développé par **Maxime Kpoghomou**  
 📧 [maximekpoghomou18@email.com]  
-🔗 [Lien vers ton portfolio](https://magoe-176b4.web.app)
+🔗 [Lien vers mon portfolio](https://magoe-176b4.web.app)
 
 ---
 
