@@ -1,16 +1,60 @@
-# code_ussd
+# 📱 Application Mobile – Gestion des Codes USSD
 
-A new Flutter project.
+Ce projet Flutter est une application mobile conçue pour faciliter l’accès, la gestion et l’utilisation des **codes USSD** en Guinée. Elle centralise les codes les plus utilisés des opérateurs mobiles locaux (achat de crédit, forfaits, transfert, consultation de solde, etc.) dans une interface simple, rapide et accessible hors connexion.
 
-## Getting Started
+## 🚀 Fonctionnalités principales
 
-This project is a starting point for a Flutter application.
+- 📲 Consultation rapide des codes USSD par catégorie
+- ✅ Exécution directe des codes depuis l’application
+- 🌍 Prise en charge multi-opérateurs (Orange, MTN, Cellcom, etc.)
+- 🔍 Recherche de services et navigation intuitive
+- 💾 Interface légère et utilisation hors ligne
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Technologies utilisées
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter** (Dart)
+- **Material Design**
+- **Gestion locale des données**
+- Prêt pour intégration future avec API externe
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Captures d’écran
+
+> *(à ajouter une fois les images placées dans le dossier `screenshots/`)*
+
+![Accueil](screenshots/screen_1.jpeg)  
+*Écran d’accueil avec accès rapide aux catégories de codes*
+
+![Exécution](screenshots/screen_2.jpeg)  
+*Affichage des détails et exécution du code USSD*
+
+![Parametre](screenshots/screen_3.jpeg)
+*Parametre de l'application*
+
+## 🧠 Objectifs du projet
+
+Ce projet a été réalisé dans le but :
+- d’offrir un outil utile pour les utilisateurs mobiles en Guinée,
+- d’explorer le développement mobile hybride avec Flutter,
+- et de démontrer l’intégration de fonctions système spécifiques comme l’appel de codes USSD.
+
+## 📂 Structure du projet
+
+- `/lib/` : logique principale de l’application
+- `/screenshots/` : captures d’écran pour démonstration
+- `/assets/` : icônes, images, etc.
+
+## 📌 Statut
+
+✅ **Projet fonctionnel**  
+🔧 **Améliorations prévues** : personnalisation par opérateur, historique, favoris, intégration API USSD (via gateway)
+
+---
+
+## 📬 Contact
+
+Développé par **Maxime Kpoghomou**  
+📧 [maximekpoghomou18@email.com]  
+🔗 [Lien vers ton portfolio](https://magoe-176b4.web.app)
+
+---
+
